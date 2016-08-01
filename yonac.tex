@@ -75,27 +75,28 @@ The Ace of Clubs gives you one chance to win instantly. The usage of
 this card is described in \ref{sec:playac}.
 
 \subsection{Gameplay}
+\label{sec:gameplay}
 
 The game proceeds in two phases: the Elimination phase and the Sudden
 Death phase. Before starting, agree on the number of players needed to
-go into the Sudden Death phase; this is the Threshold. Games with one or
-two players may ignore this as the result is the same in either phase.
-These phases are further discussed in \ref{sec:elimination} and
-\ref{sec:sd}.
+go into the Sudden Death phase; this is the Threshold. These phases are
+further discussed in \ref{sec:elimination} and \ref{sec:sd}.
 
 When the Threshold has been decided, shuffle the deck and spread the
 cards out on the table; this is the Pile. Decide on a player order.
 
 On each turn, you may do one of two actions: you may collect cards, or
-you may use the Ace of Clubs if you have it.
+you may use the Ace of Clubs if you have it set aside.
 
 \subsubsection{Collecting Cards}
 \label{sec:collecting}
 
 Each player has a stack of cards, called the Stash, into which collected
-cards are put.
+cards are put. Any Aces put into your Stash may not be used again until
+the Ace returns to the Pile.
 
 \paragraph{}
+\label{par:set}
 If you choose to collect cards, pick up one or more cards from the Pile
 and display them face-up in front of you. These cards are the Set for
 this turn.
@@ -115,8 +116,9 @@ If the Set contains the Ace of Spades and you have the Ace of Hearts set
 aside, place the Ace of Hearts in your Stash and reshuffle the Set into
 the Pile. The Ace of Hearts may not be used again until it returns to
 the Pile. Note that the Ace of Hearts is not treated specially if it is
-in the Set with the Ace of Spades; it must have been collected in a
-previous turn for this case to apply. Play proceeds to the next player.
+in the Set with the Ace of Spades; it must have been collected and set
+aside in a previous turn for this case to apply. Play proceeds to the
+next player.
 
 \paragraph{}
 If the Set contains the Ace of Diamonds, pick up one or more cards from
@@ -130,7 +132,7 @@ may play it in a later turn as described in \ref{sec:playac}.
 \paragraph{}
 If the Set contains the Ace of Hearts, put the Ace of Hearts aside. It
 will protect you if you collect the Ace of Spades in a later turn as
-previously described.
+previously described in \ref{par:spadeshearts}.
 
 Put the remaining cards in the Set into your Stash. Your turn is now
 over and play proceeds to the next player.
@@ -139,13 +141,13 @@ over and play proceeds to the next player.
 \label{sec:playac}
 
 If you have set aside the Ace of Clubs, you may choose to play it
-instead of collecting cards. Once played, put the Ace of Clubs in your
-Stash. The Ace of Clubs may not be used again until it is returned to
-the Pile.
+instead of collecting cards. Once played and put in your Stash, the Ace
+of Clubs may not be used again until it is returned to the Pile.
 
 \paragraph{}
-To play the Ace of Clubs, pick one card from the Pile and display it
-face-up in front of you.
+To play the Ace of Clubs, declare that you will be playing the Ace of
+Clubs. Put the Ace of Clubs in your Stash, then pick up one card from
+the Pile and display it face-up in front of you.
 
 \paragraph{}
 If the card is not an Ace, put it in your Stash. Your turn is now over
@@ -159,8 +161,8 @@ If the card is the Ace of Hearts, put it aside. Your turn is over and
 play proceeds to the next player.
 
 \paragraph{}
-If the card is the Ace of Diamonds, put the Ace of Diamonds in your
-Stash and pick up one more card from the Pile. Re-evaluate the new card.
+If the card is the Ace of Diamonds, put it in your Stash and pick up one
+more card from the Pile. Re-evaluate the new card.
 
 % If the card is the Ace of Clubs, you're doing it wrong.
 
@@ -190,28 +192,36 @@ In the event of a tie, the tied player who has the Ace of Hearts wins.
 If no one has the Ace of Hearts, the tied player with the Ace of Clubs
 wins. If no one has the Ace of Hearts or the Ace of Clubs, the tied
 player with the Ace of Diamonds wins. If no one has any Aces, the tied
-player who had a turn last wins.
+player who had a turn last wins. Note that if none of the remaining
+players have had a turn, then the player last in the queue wins.
 
 \section{Glossary}
 \begin{description}
-  \item[Pile]\hfill\\
+  \item[Elimination Phase](\ref{sec:elimination})\\
+    The first phase. In this phase, the game does not end when a loss
+    occurs.
+  \item[Pile](\ref{sec:gameplay})\\
     The uncollected cards spread out. In each turn, all cards are taken
     from the Pile.
-  \item[Set]\hfill\\
+  \item[Set](\ref{par:set})\\
     The cards picked up during a turn.
-  \item[Stash]\hfill\\
+  \item[Stash](\ref{sec:collecting})\\
     The player's collected cards. Each player's Stash is
-    counted at the end of the game.
-  \item[Threshold]\hfill\\
+    counted at the end of the game. Used Aces are put in the Stash and
+    may not be played again until the Ace is returned to the Pile.
+  \item[Sudden Death Phase](\ref{sec:sd})\\
+    The second phase. In this phase, the game ends when a loss occurs.
+  \item[Threshold](\ref{sec:gameplay}\\
     The number of players needed to go into the Sudden
     Death phase.
 \end{description}
 
+\newpage
 \section{Credits}
 
-This game was inspired by Bob Phillip's ``Ace of Spades''.
+This game was inspired by Bob Phillips' ``Ace of Spades''.
 
-The game was suggested by Johann Tutor.
+The game was suggested by Johann Tutor on July 28, 2016.
 
 The special attributes for the Ace of Hearts and the Ace of Clubs were
 suggested by Gaetan Boue. The special attribute for the Ace of Diamonds
