@@ -1,0 +1,27 @@
+#masthead {
+  text-align: center;
+}
+
+#masthead h1 {
+  margin-bottom: 0;
+}
+
+#masthead p {
+  margin-top: 0;
+}
+
+.disclaimer {
+  font-style: italic;
+}
+
+.contents ul {
+  list-style-type: none;
+  list-style-position: inside;
+  padding-left: 1em;
+}
+
+.numbered::before {
+  content: attr(data-number);
+  margin-right: 1em;
+  font-size: smaller;
+}
