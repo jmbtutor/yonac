@@ -52,8 +52,8 @@ collecting the Ace of Spades.
 \subsection{The Cards}
 \label{sec:cards}
 
-The four Aces (i.e. the Ace of Spades, the Ace of Hearts, the Ace of Clubs
-and the Ace of Diamonds) are special and are described below. All other
+The four Aces (i.e. the Ace of Spades, the Ace of Hearts, the Ace of Clubs and
+the Ace of Diamonds) and Jokers are special and are described below. All other
 cards have no special attributes.
 
 A card is described as ``Potent'' if its special attribute may be used.
@@ -77,6 +77,12 @@ turn finishes. The usage of this card is described in
 The Ace of Clubs gives you one chance to win instantly. The Ace of Clubs
 becomes Potent after you collect it and your turn finishes. The usage of
 this card is described in \ref{sec:playac}.
+
+\subsubsection{The Joker}
+If Jokers are in play, a Joker will remove Aces from a Set, or if there
+are no Aces in the Set, you can swap it for another player's Potent
+Ace. The usage of this card is described in \ref{par:jokersetaces} and
+\ref{par:jokersetnoaces}.
 
 \subsection{Gameplay}
 \label{sec:gameplay}
@@ -123,6 +129,24 @@ again until it returns to the Pile. Note that the Ace of Hearts is not
 Potent if it is in the Set with the Ace of Spades; it must have been
 collected and set aside in a previous turn for this case to apply. Play
 proceeds to the next player.
+
+\paragraph{}
+\label{par:jokersetaces}
+If the Set contains a Joker and there are Aces in the Set, remove the
+Aces and shuffle them into the Pile. Note that if the Set contains the
+Ace of Spades, the rules for the Ace of Spades apply instead. Put the
+rest of the Set, including any Jokers, into your Stash. Your turn is now
+over and play proceeds to the next player.
+
+\paragraph{}
+\label{par:jokersetnoaces}
+If the Set contains a Joker and there are no Aces in the Set, swap the
+Joker with a Potent Ace of another player if one exists.  Remember that
+Aces in a player's Stash are not Potent. To perform the swap, place the
+Joker into the other player's Stash. Take the Potent Ace and put it into
+your Set. Do this for every Joker in your Set. If there are no Potent
+Aces, then you many not perform a swap. After this, the Jokers lose
+their Potency. Continue to evaluate the Set, including any swapped Aces.
 
 \paragraph{}
 If the Set contains a Potent Ace of Diamonds, pick up one or more cards
