@@ -13,7 +13,7 @@
 
 \addbibresource{yonac.bib}
 
-\newcommand\theversion{2.0.0}
+\newcommand\theversion{2.0.1}
 
 \hypersetup{
   hidelinks,
@@ -22,11 +22,15 @@
 }
 
 \setcounter{secnumdepth}{4}
+\renewcommand{\sectionautorefname}{§}
+\renewcommand{\subsectionautorefname}{§}
+\renewcommand{\subsubsectionautorefname}{§}
+\renewcommand{\paragraphautorefname}{¶}
 
 \begin{document}
 \title{Yonac\\ \large A card game, v\theversion}
 \author{Johann Tutor}
-\date{September 26, 2016}
+\date{December 15, 2017}
 \maketitle
 
 Yonac is a quick and easy-to-learn card game developed by Johann Tutor
@@ -71,18 +75,18 @@ to add more cards to the Set.
 The Ace of Hearts allows you to pick up the Ace of Spades once without
 losing. The Ace of Hearts becomes Potent after you collect it and your
 turn finishes. The usage of this card is described in
-\ref{par:spadeshearts}.
+\autoref{par:spadeshearts}.
 
 \subsubsection{The Ace of Clubs}
 The Ace of Clubs gives you one chance to win instantly. The Ace of Clubs
 becomes Potent after you collect it and your turn finishes. The usage of
-this card is described in \ref{sec:playac}.
+this card is described in \autoref{sec:playac}.
 
 \subsubsection{The Joker}
 If Jokers are in play, a Joker will remove Aces from a Set, or if there
 are no Aces in the Set, you can swap it for another player's Potent
-Ace. The usage of this card is described in \ref{par:jokersetaces} and
-\ref{par:jokersetnoaces}.
+Ace. The usage of this card is described in \autoref{par:jokersetaces} and
+\autoref{par:jokersetnoaces}.
 
 \subsection{Gameplay}
 \label{sec:gameplay}
@@ -90,7 +94,7 @@ Ace. The usage of this card is described in \ref{par:jokersetaces} and
 The game proceeds in two phases: the Elimination phase and the Sudden
 Death phase. Before starting, agree on the number of players needed to
 go into the Sudden Death phase; this is the Threshold. These phases are
-further discussed in \ref{sec:elimination} and \ref{sec:sd}.
+further discussed in \autoref{sec:elimination} and \autoref{sec:sd}.
 
 When the Threshold has been decided, shuffle the deck and spread the
 cards out on the table; this is the Pile. Decide on a player order.
@@ -156,13 +160,13 @@ Ace of Diamonds now no longer Potent.
 \paragraph{}
 If the Set contains the Ace of Clubs, put the Ace of Clubs aside; the
 Ace of Clubs is now Potent. You may play it in a later turn as described
-in \ref{sec:playac}.
+in \autoref{sec:playac}.
 
 \paragraph{}
 If the Set contains the Ace of Hearts, put the Ace of Hearts aside; the
 Ace of Hearts is now Potent. It will protect you if you collect the Ace
 of Spades in a later turn as previously described in
-\ref{par:spadeshearts}.
+\autoref{par:spadeshearts}.
 
 Put the remaining cards in the Set into your Stash. Your turn is now
 over and play proceeds to the next player.
@@ -189,7 +193,7 @@ If the card is the Ace of Spades, play stops and you win the game.
 
 \paragraph{}
 If the card is a Joker, swap it for another player's Potent Ace as
-described in \ref{par:jokersetnoaces}. If no player has a Potent Ace,
+described in \autoref{par:jokersetnoaces}. If no player has a Potent Ace,
 you may not perform the swap. Evaluate the new card as if that was the
 card you picked up.
 
@@ -221,7 +225,7 @@ cards in their Stash, including any Aces set aside.
 \subsubsection{Winning}
 
 There are two ways to win: by picking up the Ace of Spades while using
-the Ace of Clubs as described in \ref{sec:playac}, or by not being
+the Ace of Clubs as described in \autoref{sec:playac}, or by not being
 eliminated and having the most cards your Stash at the end of the Sudden
 Death phase.
 
@@ -236,23 +240,23 @@ had a turn, then the player last in the queue wins.
 \newpage
 \section{Glossary}
 \begin{description}
-  \item[Elimination Phase](\ref{sec:elimination})\\
+  \item[Elimination Phase](\autoref{sec:elimination})\\
     The first phase. In this phase, the game does not end when a loss
     occurs.
-  \item[Pile](\ref{sec:gameplay})\\
+  \item[Pile](\autoref{sec:gameplay})\\
     The uncollected cards spread out. In each turn, all cards are taken
     from the Pile.
-  \item[Potent](\ref{sec:cards})\\
+  \item[Potent](\autoref{sec:cards})\\
     Describes a card whose special attribute may be used.
-  \item[Set](\ref{par:set})\\
+  \item[Set](\autoref{par:set})\\
     The cards picked up during a turn.
-  \item[Stash](\ref{sec:collecting})\\
+  \item[Stash](\autoref{sec:collecting})\\
     The player's collected cards. Each player's Stash is
     counted at the end of the game. Used Aces are put in the Stash and
     may not be played again until the Ace is returned to the Pile.
-  \item[Sudden Death Phase](\ref{sec:sd})\\
+  \item[Sudden Death Phase](\autoref{sec:sd})\\
     The second phase. In this phase, the game ends when a loss occurs.
-  \item[Threshold](\ref{sec:gameplay})\\
+  \item[Threshold](\autoref{sec:gameplay})\\
     The number of players needed to go into the Sudden
     Death phase.
 \end{description}
