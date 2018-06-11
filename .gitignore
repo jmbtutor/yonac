@@ -179,6 +179,11 @@ pythontex-files-*/
 # Latexian
 TSWLatexianTemp*
 
+# Hevea
+*.haux
+*.htoc
+*.image.tex
+
 ## Editors:
 # WinEdt
 *.bak
