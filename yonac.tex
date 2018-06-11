@@ -23,6 +23,7 @@
 \renewcommand{\subsectionautorefname}{§}
 \renewcommand{\subsubsectionautorefname}{§}
 \renewcommand{\paragraphautorefname}{¶}
+%HEVEA\renewcommand{\hrule}{\@hr{}{}}
 
 \begin{document}
 \title{Yonac\\ \large A card game, v\theversion}
@@ -30,12 +31,16 @@
 \date{\today}
 \maketitle
 
+%HEVEA\begin{center}\textit{This document is also available as a \href{https://github.com/jmbtutor/yonac/releases/download/v\theversion{}/yonac-v\theversion{}.pdf}{PDF}. The PDF is authoritative for any discrepancies between it and this document.}\end{center}
+
 Yonac is a quick and easy-to-learn card game developed by Johann Tutor
 and Gaetan Boue. Its name is from the Japanese word for ``four'' and
 from the first two letters of ``ace''. It is inspired by the game ``Ace
 of Spades'', described in Bob Phillips' \textit{Super Cool Jokes and Games for Kids}.\footnote{Bob Phillips. \textit{Super Cool Jokes and Games for Kids}. Harvest House Publishers, July 1, 2002, p. 72.}
 
+%HEVEA\hrule
 \tableofcontents
+%HEVEA\hrule
 
 \newpage
 
@@ -272,9 +277,13 @@ This document was written by Johann Tutor.
 
 {
   \small
+%BEGIN LATEX
   \begin{wrapfigure}{L}{0.175\textwidth}
+%END LATEX
     \includegraphics[scale=0.5]{cc-by.eps}
+%BEGIN LATEX
   \end{wrapfigure}
+%END LATEX
 
   \copyright 2016--2018, Johann Tutor.
 
